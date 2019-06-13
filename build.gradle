@@ -1,0 +1,16 @@
+plugins {
+    // Apply the java plugin to add support for Java
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.javassist', name: 'javassist', version: '3.24.1-GA'
+}
+
+configurations{
+  jar.archiveName = 'functionalProfiler.jar'
+}
